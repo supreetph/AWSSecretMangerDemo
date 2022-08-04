@@ -19,8 +19,8 @@ namespace AWSSecretDemo.Controllers
             string secretName = "lastname";
             string region = "us-west-2";
             string secret = "";
-            string secretKey = "AKIA4EC6ZPHX2OUZ3PSN";
-            string pwd = "wDtpGzaL63ugNc4wzFz+O0IJ5Hneq2vqJbPesTU6";
+            string secretKey = "";
+            string pwd = "";
             MemoryStream memoryStream = new MemoryStream();
             IAmazonSecretsManager client = new AmazonSecretsManagerClient(secretKey,pwd,RegionEndpoint.GetBySystemName(region));
             GetSecretValueRequest request = new GetSecretValueRequest();
